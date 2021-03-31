@@ -390,3 +390,7 @@ body {
     cursor: -moz-grabbing;
     cursor: -webkit-grabbing;
 }
+
+.hide {
+	display: none;
+}

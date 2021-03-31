@@ -391,4 +391,8 @@ body {
     cursor: -webkit-grabbing;
 }
 
+.hide {
+	display: none;
+}
+
 /*# sourceMappingURL=/base.98fd6c19.css.map */

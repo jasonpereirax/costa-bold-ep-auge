@@ -112,6 +112,7 @@ export class Intro {
         gsap.set([DOM.frame, DOM.content], {opacity: 1});
 
         $(".content").addClass('grabbable');
+        $(".container").removeClass('hide');
 
         gsap.timeline()
         .addLabel('start', 0)
