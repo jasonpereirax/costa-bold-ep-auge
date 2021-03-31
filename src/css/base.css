@@ -365,7 +365,7 @@ body {
     background-color: #F2D154;
 	width: 100%;
     height: 100vh;
-    position: absolute;
+	position: relative;
     overflow: hidden;
 }
 
