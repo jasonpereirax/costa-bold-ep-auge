@@ -391,16 +391,19 @@ body {
 	position: absolute;
     width: 100px;
     height: 100px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .highlight::before {
 	content: "";
     display: block;
-    position: absolute;
+    position: relative;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    inset: 0px 0px 0px 0;
+    inset: 0 0 0 0;
     margin: auto;
     background-color: rgb(255, 255, 255);
 }
