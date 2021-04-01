@@ -358,15 +358,28 @@ body {
 	background-color: #F2D154;
 }
 
+.view {
+	width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.view::-webkit-scrollbar {
+	display: none;
+}
+
 .content {
 	background-image: url(../../src/image/background-page.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-color: #F2D154;
 	width: 100%;
-    height: 100vh;
+    height: 3300px;
 	position: relative;
-    overflow: hidden;
+	box-sizing: content-box;
+	overflow: hidden;
 }
 
 .content svg {
