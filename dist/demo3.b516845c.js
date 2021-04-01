@@ -5808,6 +5808,7 @@ var Intro = /*#__PURE__*/function () {
         opacity: 1
       });
 
+      $(".frame").hide();
       $(".content").addClass('grabbable');
       $(".container").removeClass('hide');
 
@@ -5888,7 +5889,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61074" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61224" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

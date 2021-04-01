@@ -111,6 +111,7 @@ export class Intro {
 
         gsap.set([DOM.frame, DOM.content], {opacity: 1});
 
+        $(".frame").hide();
         $(".content").addClass('grabbable');
         $(".container").removeClass('hide');
 
