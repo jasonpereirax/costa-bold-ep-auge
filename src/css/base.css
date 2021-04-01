@@ -387,6 +387,12 @@ body {
 	display: none;
 }
 
+.highlight {
+	position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
 .highlight::before {
 	content: "";
     display: block;
@@ -394,7 +400,7 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    inset: 0px 0px 0px 17px;
+    inset: 0px 0px 0px 0;
     margin: auto;
     background-color: rgb(255, 255, 255);
 }
@@ -434,8 +440,8 @@ body {
 
 .wrapper-person-01 .highlight {
 	position: absolute;
-    top: 60px;
-    left: 456px;
+    top: -20px;
+    left: 427px;
 }
 
 #person01 {
@@ -485,8 +491,8 @@ body {
 
 .wrapper-person-02 .highlight {
 	position: absolute;
-    top: 15px;
-    left: 419px;
+    top: -25px;
+    left: 399px;
 }
 
 .wrapper-person-02 {
@@ -561,7 +567,7 @@ body {
 
 .wrapper-dog .highlight {
 	position: absolute;
-    top: -30px;
+	top: -60px;
     left: 300px;
 }
 
@@ -580,8 +586,8 @@ body {
 
 .wrapper-vitrola .highlight {
 	position: absolute;
-    top: -32px;
-    left: 70px;
+    top: -85px;
+    left: 61px;
 }
 
 #vitrola {
@@ -599,7 +605,7 @@ body {
 
 .wrapper-money .highlight {
 	position: absolute;
-    top: -10px;
+    top: -70px;
     left: 136px;
 }
 
@@ -618,7 +624,7 @@ body {
 
 .wrapper-estatua .highlight {
 	position: absolute;
-    top: -27px;
+    top: calc(-27px -100px);
     left: 158px;
 }
 
@@ -637,7 +643,7 @@ body {
 
 .wrapper-cinzeiro .highlight {
 	position: absolute;
-    top: 125px;
+    top: calc(125px -100px);
     left: 50px;
 }
 
@@ -656,7 +662,7 @@ body {
 
 .wrapper-caixinha .highlight {
 	position: absolute;
-    top: 123px;
+    top: calc(123px -100px);
     left: -23px;
 }
 
@@ -694,8 +700,8 @@ body {
 
 .wrapper-manequim .highlight {
 	position: absolute;
-    top: 109px;
-    right: 10px;
+    top: -47px;
+    right: -20px;
 }
 
 .wrapper-manequim svg {
@@ -713,8 +719,8 @@ body {
 
 .wrapper-disco .highlight {
 	position: absolute;
-    top: 25px;
-    right: -10px;
+    top: -10px;
+    right: -85px;
 }
 
 .wrapper-disco svg {
@@ -732,8 +738,8 @@ body {
 
 .wrapper-roupas .highlight {
 	position: absolute;
-    bottom: 330px;
-    right: 550px;
+    bottom: 230px;
+    right: 515px;
 }
 
 .wrapper-roupas::after {
