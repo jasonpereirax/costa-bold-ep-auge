@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var userHasScrolled = true;
+    var userHasScrolled = false;
 
     if(userHasScrolled) {
         $('.content').on('mousemove', function(e){

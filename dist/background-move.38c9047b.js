@@ -119,7 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/demo3/background-move.js":[function(require,module,exports) {
 $(document).ready(function () {
-  var userHasScrolled = true;
+  var userHasScrolled = false;
 
   if (userHasScrolled) {
     $('.content').on('mousemove', function (e) {
@@ -157,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62683" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62817" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
