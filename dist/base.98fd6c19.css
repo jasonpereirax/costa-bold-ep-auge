@@ -510,7 +510,7 @@ body {
 	width: 542px;
     height: 836px;
     position: absolute;
-	top: 1503px;
+	top: 1519px;
     left: 241px;
 	z-index: 1;
 }
@@ -682,6 +682,8 @@ body {
 	height: 100%;
 }
 
+.wrapper-cartola svg .cls-1{fill:#5a4127;} .wrapper-cartola svg .cls-2{fill:#8e6518;} .wrapper-cartola svg .cls-3{fill:#aea296;} .wrapper-cartola svg .cls-4{fill:#e9c346;} .wrapper-cartola svg .cls-5{fill:#d6ae3a;} .wrapper-cartola svg .cls-6{fill:#f4dc6f;} .wrapper-cartola svg .cls-7{fill:#fef296;} .wrapper-cartola svg .cls-8{fill:#e5bf44;} .wrapper-cartola svg .cls-9{fill:#efd76b;} .wrapper-cartola svg .cls-10{fill:#fcf196;} .wrapper-cartola svg .cls-11{fill:#fcfcfb;} .wrapper-cartola svg .cls-12{fill:#f8dc59;} .wrapper-cartola svg .cls-13{fill:#e1c249;} .wrapper-cartola svg .cls-14{fill:#fbe878;} .wrapper-cartola svg .cls-15{fill:#f5d958;}
+
 .wrapper-cartola .highlight {
 	position: absolute;
     top: -60px;
@@ -716,6 +718,8 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+.wrapper-dog svg .cls-1{fill:#865a0d;} .wrapper-dog svg .cls-2{fill:#8f6519;} .wrapper-dog svg .cls-3{fill:#f2d960;} .wrapper-dog svg .cls-4{fill:#dbbb46;} .wrapper-dog svg .cls-5{fill:#f8e067;} .wrapper-dog svg .cls-6{fill:#e0c75f;} .wrapper-dog svg .cls-7{fill:#caa73a;} .wrapper-dog svg .cls-8{fill:#eed45c;} .wrapper-dog svg .cls-9{fill:#fae880;} .wrapper-dog svg .cls-10{fill:#fbee93;} .wrapper-dog svg .cls-11{fill:#e4c858;} .wrapper-dog svg .cls-12{fill:#dfc14c;} .wrapper-dog svg .cls-13{fill:#eacf59;} .wrapper-dog svg .cls-14{fill:#fbf5cd;} .wrapper-dog svg .cls-15{fill:#edd76d;}
 
 .wrapper-dog .highlight {
 	position: absolute;
@@ -759,6 +763,8 @@ body {
 	height: 100%;
 }
 
+.wrapper-vitrola svg .cls-1{fill:#86590d;} .wrapper-vitrola svg .cls-2{fill:#8d6215;} .wrapper-vitrola svg .cls-3{fill:#fcf5be;} .wrapper-vitrola svg .cls-4{fill:#f6da58;} .wrapper-vitrola svg .cls-5{fill:#e0c149;} .wrapper-vitrola svg .cls-6{fill:#f7db58;} .wrapper-vitrola svg .cls-7{fill:#dfc048;} .wrapper-vitrola svg .cls-8{fill:#fcec84;} .wrapper-vitrola svg .cls-9{fill:#f8e57c;} .wrapper-vitrola svg .cls-10{fill:#fdf5b5;} .wrapper-vitrola svg .cls-11{fill:#d9b944;} .wrapper-vitrola svg .cls-12{fill:#926815;} .wrapper-vitrola svg .cls-13{fill:#a2791f;} .wrapper-vitrola svg .cls-14{fill:#b6912d;}
+
 .wrapper-vitrola .highlight {
 	position: absolute;
     top: -85px;
@@ -788,9 +794,30 @@ body {
 	width: 331px;
     height: 337px;
     position: absolute;
-    top: 1763px;
-    right: 6px;
+	top: 1724px;
+    right: 10px;
 }
+
+@media screen and (max-width: 480px) {
+	.wrapper-money {
+		width: 55px;
+		height: 40px;
+		top: 454px;
+		left: 54px;
+	}
+
+	.wrapper-money .highlight {
+		top: -39px;
+    	left: -1px;
+	}
+}
+
+.wrapper-money svg {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper-money svg  .cls-1{fill:#86590d;} .wrapper-money svg .cls-2{fill:#fbfaf8;} .wrapper-money svg .cls-3{fill:#8d6214;} .wrapper-money svg .cls-4{fill:#e0c149;} .wrapper-money svg .cls-5{fill:#f7db58;} .wrapper-money svg .cls-6{fill:#fcec89;} .wrapper-money svg .cls-7{fill:#f6da58;} .wrapper-money svg .cls-8{fill:#f9f5dd;} .wrapper-money svg .cls-9{fill:#f6d957;} .wrapper-money svg .cls-10{fill:#fced89;} .wrapper-money svg .cls-11{fill:#f4d856;} .wrapper-money svg .cls-12{fill:#f8dc59;} .wrapper-money svg .cls-13{fill:#dfc049;} .wrapper-money svg .cls-14{fill:#e2c34a;} .wrapper-money svg .cls-15{fill:#b38d2a;}
 
 .wrapper-money .highlight {
 	position: absolute;
@@ -826,6 +853,13 @@ body {
 	top: 2071px;
     right: 124px;
 }
+
+.wrapper-estatua svg {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper-estatua svg .cls-1{fill:#86590c;} .wrapper-estatua svg .cls-2{fill:#ccba9a;} .wrapper-estatua svg .cls-3{fill:#8c6113;} .wrapper-estatua svg .cls-4{fill:#c9a739;} .wrapper-estatua svg .cls-5{fill:#ecce50;} .wrapper-estatua svg .cls-6{fill:#e8ca4e;} .wrapper-estatua svg .cls-7{fill:#eed667;} .wrapper-estatua svg .cls-8{fill:#fdf196;} .wrapper-estatua svg .cls-9{fill:#efd253;} .wrapper-estatua svg .cls-10{fill:#f3d758;} .wrapper-estatua svg .cls-11{fill:#f9e471;} .wrapper-estatua svg .cls-12{fill:#d2b140;} .wrapper-estatua svg .cls-13{fill:#f8e067;} .wrapper-estatua svg .cls-14{fill:#dfc357;} .wrapper-estatua svg .cls-15{fill:#d9bc4e;} .wrapper-estatua svg .cls-16{fill:#fae77b;} .wrapper-estatua svg .cls-17{fill:#f5db5f;} .wrapper-estatua svg .cls-18{fill:#fefefd;}
 
 .wrapper-estatua .highlight {
 	position: absolute;
