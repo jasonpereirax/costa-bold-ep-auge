@@ -1,16 +1,12 @@
 $(document).ready(function(){
     var userHasScrolled = false;
-    
-    window.onscroll = function (e) {
-        userHasScrolled = true;
-        return false;
+
+    if(userHasScrolled) {
+        $('.content').on('mousemove', function(e){
+            e.stopPropagation();
+
+            $('.view').stop(true, true).scrollLeft( (e.pageX - $('body').scrollLeft()) * 3 - 650);
+            $('.view').stop(true, true).scrollTop( (e.pageY - $('body').scrollTop()) * 5 - 350);
+        });
     }
-
-    
-    $('.content').on('mousemove', function(e){
-        e.stopPropagation();
-
-        $('.view').scrollLeft( (e.pageX - $('body').scrollLeft()) * 3 - 650);
-        $('.view').scrollTop( (e.pageY - $('body').scrollTop()) * 5 - 350);
-    });
 });

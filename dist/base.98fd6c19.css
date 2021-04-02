@@ -387,6 +387,12 @@ body {
 	display: none;
 }
 
+.highlight-tv {
+	position: absolute;
+	bottom: 970px;
+    left: 160px;
+}
+
 .highlight {
 	position: absolute;
     width: 100px;
@@ -439,12 +445,13 @@ body {
     position: absolute;
 	top: 1503px;
     left: 241px;
+	z-index: 1;
 }
 
 .wrapper-person-01 .highlight {
 	position: absolute;
-    top: -20px;
-    left: 427px;
+    top: 190px;
+    left: 415px;
 }
 
 #person01 {
@@ -494,8 +501,8 @@ body {
 
 .wrapper-person-02 .highlight {
 	position: absolute;
-    top: -25px;
-    left: 399px;
+    top: 208px;
+    left: 470px;
 }
 
 .wrapper-person-02 {
@@ -504,6 +511,7 @@ body {
     position: absolute;
     top: 1570px;
     left: 800px;
+	z-index: 1;
 }
 
 #person02 {
@@ -560,6 +568,26 @@ body {
 	}
 }
 
+.wrapper-cartola {
+	width: 345px;
+    height: 486px;
+    position: absolute;
+    top: 1329px;
+    left: 519px;
+    z-index: 0;
+}
+
+.wrapper-cartola svg {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper-cartola .highlight {
+	position: absolute;
+    top: -60px;
+    right: 32px;
+}
+
 .wrapper-dog {
 	width: 345px;
     height: 300px;
@@ -572,6 +600,8 @@ body {
 	position: absolute;
 	top: -60px;
     left: 300px;
+
+	display: none;
 }
 
 #dog {
@@ -610,6 +640,8 @@ body {
 	position: absolute;
     top: -70px;
     left: 136px;
+
+	display: none;
 }
 
 #money {
@@ -629,6 +661,8 @@ body {
 	position: absolute;
     top: calc(-27px -100px);
     left: 158px;
+
+	display: none;
 }
 
 .wrapper-estatua svg {
@@ -648,6 +682,8 @@ body {
 	position: absolute;
     top: calc(125px -100px);
     left: 50px;
+
+	display: none;
 }
 
 #cinzeiro {
@@ -665,8 +701,8 @@ body {
 
 .wrapper-caixinha .highlight {
 	position: absolute;
-    top: calc(123px -100px);
-    left: -23px;
+    left: -50px;
+    top: 60px;
 }
 
 .wrapper-caixinha svg {
@@ -684,8 +720,8 @@ body {
 
 .wrapper-controle .highlight {
 	position: absolute;
-    bottom: 0;
-    left: -23px;
+    bottom: -37px;
+    left: -30px;
 }
 
 .wrapper-controle svg {
