@@ -533,6 +533,11 @@ body {
 		top: 440px;
 		left: 83px;
 	}
+
+	.wrapper-person-01 .highlight {
+		top: 40px;
+		left: 98px;
+	}
 }
 
 #person01 {
@@ -602,6 +607,11 @@ body {
 		top: 469px;
 		left: 247px;
 	}
+
+	.wrapper-person-02 .highlight {
+		top: 13px;
+		left: 104px;
+	}	
 }
 
 #person02 {
@@ -734,6 +744,7 @@ body {
 	height: 100%;
 }
 
+
 .wrapper-vitrola {
 	width: 203px;
     height: 144px;
@@ -752,6 +763,20 @@ body {
 	position: absolute;
     top: -85px;
     left: 61px;
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper-vitrola {
+		width: 55px;
+		height: 40px;
+		top: 454px;
+		left: 54px;
+	}
+
+	.wrapper-vitrola .highlight {
+		top: -39px;
+    	left: -1px;
+	}
 }
 
 #vitrola {
@@ -775,6 +800,20 @@ body {
 	display: none;
 }
 
+@media screen and (max-width: 480px) {
+	.wrapper-money {
+		width: 100px;
+		height: 100px;
+		top: 517px;
+		right: 0;
+	}
+
+	.wrapper-money .highlight {
+		top: -35px;
+		left: 30px;
+	}
+}
+
 #money {
 	width: 100%;
 	height: 100%;
@@ -794,6 +833,20 @@ body {
     left: 158px;
 
 	display: none;
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper-estatua {
+		width: 83px;
+		height: 115px;
+		top: 635px;
+		right: 72px;
+	}
+
+	.wrapper-estatua .highlight {
+		top: -12px;
+		left: 40px;
+	}
 }
 
 .wrapper-estatua svg {
@@ -817,6 +870,20 @@ body {
 	display: none;
 }
 
+@media screen and (max-width: 480px) {
+	.wrapper-cinzeiro {
+		width: 32px;
+		height: 30px;
+		top: 716px;
+		right: 269px;
+	}
+	
+	.wrapper-cinzeiro .highlight {
+		top: -14px;
+    	left: 20px;
+	}
+}
+
 #cinzeiro {
 	width: 100%;
 	height: 100%;
@@ -836,6 +903,21 @@ body {
     top: 60px;
 }
 
+@media screen and (max-width: 480px) {
+	.wrapper-caixinha {
+		width: 24px;
+		height: 52px;
+		top: 656px;
+		right: 338px;
+	}
+	
+	.wrapper-caixinha .highlight {
+		position: absolute;
+		left: -40px;
+		top: -13px;
+	}
+}
+
 .wrapper-caixinha svg {
 	width: 100%;
 	height: 100%;
@@ -853,6 +935,20 @@ body {
 	position: absolute;
     bottom: -37px;
     left: -30px;
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper-controle {
+		width: 43px;
+		height: 42px;
+		top: 681px;
+		right: 289px;
+	}
+	
+	.wrapper-controle .highlight {
+		bottom: -21px;
+		left: -25px;
+	}
 }
 
 .wrapper-controle svg {
