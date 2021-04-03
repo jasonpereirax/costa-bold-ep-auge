@@ -1228,7 +1228,7 @@ body {
 }
 
 .header-main .navigation .wrapper-links .container-link .link {
-	font-size: 24px;
+	font-size: 18px;
 	position: relative;
 	display: block;
 	color: #000000;
@@ -1335,15 +1335,20 @@ body {
 	margin-bottom: 12px;
 }
 
-.main-page .section-01 .block-album-spotify .box-content .header .container-image {
-	width: 200px;
-	height: auto;
+.main-page .section-01 .block-album-spotify .box-content .header .wrapper-title .title {
+	font-family: monument;
+	font-weight: bold;
+	font-size: 28px;
+	color: #CBB663;
+	text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
 
-.main-page .section-01 .block-album-spotify .box-content .header .container-image .image {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
+.main-page .section-01 .block-album-spotify .box-content .header .wrapper-title .subtitle {
+	margin-bottom: 10px;
+	font-family: monument;
+	font-weight: bold;
+	font-size: 26px;
+	color: #000000;
 }
 
 .main-page .section-01 .block-album-spotify .box-content .main .text {
@@ -1359,7 +1364,7 @@ body {
 	background-color: #000000;
 	border: 0;
 	outline: 0;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	padding: 18px 15px;
@@ -1390,7 +1395,7 @@ body {
 }
 
 .main-page .section-01 .block-about-costa-gold  {
-	padding: 120px 0;
+	padding: 160px 0 300px;
 	position: relative;
     z-index: 1;
 }
@@ -1449,7 +1454,7 @@ body {
 	background-color: #E4B715;
 	border: 0;
 	outline: 0;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	padding: 18px 15px;
@@ -1477,4 +1482,138 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: .35s transform;
+}
+
+.main-page .section-02 {
+	background-color: #FFFFFF;
+}
+
+.main-page .section-02 .container {
+	position: relative;
+}
+
+.main-page .section-02 .container::after {
+	content: '';
+    background-image: url(../image/image-circle-letters.svg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 180px;
+    left: -250px;
+    display: block;
+	z-index: 0;
+	animation: 60s animation-circle-letters linear infinite alternate;
+}
+
+.main-page .section-02 .wrapper-artists {
+	transform: translateY(-133px);
+    margin-bottom: -60px;
+	position: relative;
+	z-index: 1;
+}
+
+.main-page .section-02 .wrapper-artists .row .col {
+	flex: 1;
+	width: 100%;
+}
+
+.main-page .section-02 .wrapper-artists .row .col + .col {
+	margin-left: 1em;
+}
+
+.main-page .section-02 .wrapper-artists .card {
+	background-color: #E4B715;
+	padding: 35px 30px;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-header {
+	background-color: #E4B715;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-header .container-image {
+	width: 100%;
+	height: 100%;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-header .container-image .image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-title {
+	margin-top: 35px;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-title .title {
+	font-family: monument;
+	font-weight: bold;
+	font-size: 28px;
+	color: #000000;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-title .subtitle {
+	margin-bottom: 10px;
+	font-family: monument;
+	font-weight: bold;
+	font-size: 21px;
+	color: #E4B715;
+	text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-text .text {
+	font-size: 20px;
+}
+
+.main-page .section-02 .wrapper-prize-draw {
+	background-color: #000000;
+	position: relative;
+	z-index: 1;
+	padding: 35px 30px 150px;
+	margin-bottom: 65px;
+}
+
+.main-page .section-02 .wrapper-prize-draw .header .title {
+	font-family: monument;
+	font-weight: bold;
+	font-size: 28px;
+	color: #FFFFFF;
+	line-height: 30px;
+	position: relative;
+	display: inline-block;
+}
+
+.main-page .section-02 .wrapper-prize-draw .header .title::after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	background-color: #FFFFFF;
+	position: absolute;
+	right: -20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.footer-page {
+	background-color: #343434;
+	width: 100%;
+	height: 350px;
+	position: relative;
+}
+
+.footer-page::before {
+	content: '';
+	background-color: #242424;
+	width: 100%;
+	height: 55px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
 }
