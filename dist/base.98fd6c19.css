@@ -1,3 +1,63 @@
+@font-face {
+	font-family: monument;
+	src: url(/MonumentExtended-Bold.8d494c56.otf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-Bold.7da82ab6.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-BoldItalic.8c7a9d1b.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-ExtraBold.e2361291.ttf);
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-ExtraBoldItalic.a27e31b4.ttf);
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-Italic.0de8ef37.ttf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-LightItalic.cd4219fe.ttf);
+	font-weight: 150;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-Regular.9187fe9b.ttf);
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-SemiBold.7d6ca272.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: opensans;
+	src: url(/OpenSans-SemiBoldItalic.71e3f614.ttf);
+	font-weight: 350;
+}
+
 *,
 *::after,
 *::before {
@@ -10,7 +70,7 @@
 
 *, body, html,
 h1, h2, h3, h4, h5,
-a, p, ul, a {
+a, p, ul, a, button {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -44,6 +104,8 @@ body {
 	font-family: tenon, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	font-weight: 200;
 }
 
 .demo-2 {
@@ -368,6 +430,10 @@ a:focus-visible {
 
 body {
 	background-color: #FFFFFF;
+}
+
+.wrapper-page {
+	overflow: hidden;
 }
 
 .view {
@@ -1102,7 +1168,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 30px;
 }
@@ -1165,6 +1231,8 @@ body {
 	font-size: 24px;
 	position: relative;
 	display: block;
+	color: #000000;
+	font-weight: 300;
 }
 
 .header-main .navigation .wrapper-links .container-link .link:hover:after {
@@ -1187,15 +1255,43 @@ body {
 .main-page .section-01 {
 	background-color: #EFEFEF;
 	width: 100%;
+	position: relative;
+}
+
+.main-page .section-01 .container::after {
+	content: '';
+    background-image: url(/image-circle-letters.a0faa8ef.svg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 270px;
+    right: -250px;
+    display: block;
+	z-index: 0;
+	animation: 60s animation-circle-letters linear infinite alternate;
+}
+
+@keyframes animation-circle-letters {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .main-page .section-01 .block-album-spotify {
 	background-color: #CBB663;
 	width: 100%;
-	margin-top: -150px;
+	transform: translateY(-135px);
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	padding: 65px 0 50px;
+	box-shadow: 0 0 20px rgb(0 0 0 / 35%);
+	margin-bottom: -135px;
 }
 
 .main-page .section-01 .block-album-spotify::before {
@@ -1227,7 +1323,7 @@ body {
 }
 
 .main-page .section-01 .block-album-spotify .row .col + .col {
-	margin-left: 4em;
+	margin-left: 6em;
 }
 
 .main-page .section-01 .block-album-spotify .col-02 {
@@ -1240,7 +1336,7 @@ body {
 }
 
 .main-page .section-01 .block-album-spotify .box-content .header .container-image {
-	width: 180px;
+	width: 200px;
 	height: auto;
 }
 
@@ -1278,6 +1374,8 @@ body {
 	color: #FFFFFF;
 	font-size: 20px;
 	margin-right: 15px;
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	font-weight: 300;
 }
 
 .main-page .section-01 .block-album-spotify .box-content .footer .btn .icon-arrow-right {
@@ -1285,6 +1383,96 @@ body {
 	width: 32px;
 	height: 20px;
 	background-image: url(/icon-arrow-white.0911adfd.svg);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: .35s transform;
+}
+
+.main-page .section-01 .block-about-costa-gold  {
+	padding: 120px 0;
+	position: relative;
+    z-index: 1;
+}
+
+.main-page .section-01 .block-about-costa-gold .col-01 {
+	width: 100%;
+	max-width: 26em;
+}
+
+.main-page .section-01 .block-about-costa-gold .col-02 .container-image {
+	width: 100%;
+    height: auto;
+}
+
+.main-page .section-01 .block-about-costa-gold .col-02 .container-image .image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.main-page .section-01 .block-about-costa-gold .row {
+	align-items: center;
+	justify-content: center;
+}
+
+.main-page .section-01 .block-about-costa-gold .row .col + .col {
+	margin-left: 4em;
+}
+
+.main-page .section-01 .block-about-costa-gold .col-02 {
+	width: 100%;
+	max-width: 26em;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .header {
+	margin-bottom: 12px;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .header .title {
+	margin-bottom: 12px;
+	font-family: monument;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .main .text {
+	font-size: 24px;
+	color: #373633;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .footer {
+	margin-top: 25px;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .footer .btn {
+	background-color: #E4B715;
+	border: 0;
+	outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 15px;
+	cursor: pointer;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .footer .btn:hover .icon-arrow-right {
+	transform: translateX(8px);
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .footer .btn .text {
+	color: #000000;
+	font-size: 20px;
+	margin-right: 15px;
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .footer .btn .icon-arrow-right {
+	display: block;
+	width: 32px;
+	height: 20px;
+	background-image: url(/icon-arrow-black.8269fe8d.svg);
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
