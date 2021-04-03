@@ -1235,6 +1235,17 @@ body {
 	font-weight: 300;
 }
 
+@media screen and (max-width: 600px) {
+	.header-main .navigation .wrapper-links .container-link + .container-link {
+		margin-left: .65em;
+	}
+
+	.header-main .navigation .wrapper-links .container-link .link {
+		font-size: 14px;
+		margin-top: -10px;
+	}
+}
+
 .header-main .navigation .wrapper-links .container-link .link:hover:after {
 	width: 100%;
 }
@@ -1289,7 +1300,7 @@ body {
 	transform: translateY(-135px);
 	position: relative;
 	z-index: 2;
-	padding: 65px 0 50px;
+	padding: 65px 50px 50px;
 	box-shadow: 0 0 20px rgb(0 0 0 / 35%);
 	margin-bottom: -135px;
 }
@@ -1322,6 +1333,17 @@ body {
 	justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+	.main-page .section-01 .block-album-spotify .row {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-01 .block-album-spotify .row .col + .col {
+		margin-left: 0em;
+		margin-top: 3.5em;
+	}
+}
+
 .main-page .section-01 .block-album-spotify .row .col + .col {
 	margin-left: 6em;
 }
@@ -1329,6 +1351,17 @@ body {
 .main-page .section-01 .block-album-spotify .col-02 {
 	width: 100%;
 	max-width: 26em;
+}
+
+@media screen and (max-width: 900px) {
+	.main-page .section-01 .block-album-spotify .row .col + .col {
+		margin-left: 0;
+	}
+
+	.main-page .section-01 .block-album-spotify .col-02 {
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .main-page .section-01 .block-album-spotify .box-content .header {
@@ -1394,10 +1427,16 @@ body {
 	transition: .35s transform;
 }
 
-.main-page .section-01 .block-about-costa-gold  {
+.main-page .section-01 .block-about-costa-gold {
 	padding: 160px 0 300px;
 	position: relative;
     z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.main-page .section-01 .block-about-costa-gold {
+		padding: 70px 0 220px;
+	}
 }
 
 .main-page .section-01 .block-about-costa-gold .col-01 {
@@ -1428,6 +1467,25 @@ body {
 .main-page .section-01 .block-about-costa-gold .col-02 {
 	width: 100%;
 	max-width: 26em;
+}
+
+@media screen and (max-width: 800px) {
+	.main-page .section-01 .block-about-costa-gold .row {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-01 .block-about-costa-gold .col-01 {
+		max-width: 100%;
+	}
+
+	.main-page .section-01 .block-about-costa-gold .row .col + .col {
+		margin-left: 0;
+	}
+	
+	.main-page .section-01 .block-about-costa-gold .col-02 {
+		max-width: 100%;
+		margin-top: 3.5em;
+	}
 }
 
 .main-page .section-01 .block-about-costa-gold .box-content .header {
@@ -1522,6 +1580,21 @@ body {
 
 .main-page .section-02 .wrapper-artists .row .col + .col {
 	margin-left: 1em;
+}
+
+@media screen and (max-width: 800px) {
+	.main-page .section-02 .wrapper-artists .row {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-02 .wrapper-artists .row .col {
+		flex: auto;
+	}
+
+	.main-page .section-02 .wrapper-artists .row .col + .col {
+		margin-left: 0;
+		margin-top: 3.5em;
+	}
 }
 
 .main-page .section-02 .wrapper-artists .card {
