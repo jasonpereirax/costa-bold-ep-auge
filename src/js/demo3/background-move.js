@@ -1,6 +1,8 @@
 $(document).ready(function(){
     var userHasScrolled = false;
 
+    $('.view').scrollTop(1450);
+
     if(userHasScrolled) {
         $('.content').on('mousemove', function(e){
             e.stopPropagation();

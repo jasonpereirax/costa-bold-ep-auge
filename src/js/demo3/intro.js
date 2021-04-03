@@ -113,7 +113,7 @@ export class Intro {
 
         $(".frame").hide();
         $(".content").addClass('grabbable');
-        $(".container").removeClass('hide');
+        $(".wrapper-content-page").removeClass('hide');
 
         gsap.timeline()
         .addLabel('start', 0)

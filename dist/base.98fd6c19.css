@@ -8,6 +8,16 @@
 	font-size: 16px;
 }
 
+*, body, html,
+h1, h2, h3, h4, h5,
+a, p, ul, a {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	--color-text: #a5a5a5;
@@ -239,6 +249,7 @@ a:focus-visible {
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
+	margin-top: 100px;
 }
 
 .js .content {
@@ -356,7 +367,7 @@ a:focus-visible {
 }
 
 body {
-	background-color: #F2D154;
+	background-color: #FFFFFF;
 }
 
 .view {
@@ -1087,6 +1098,197 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	display: block;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.row {
+	display: flex;
+}
+
+.header-main {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #FFFFFF;
+    z-index: 99999;
+    padding-top: 18px;
+}
+
+.header-main::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 13px;
+	background-color: #373633;
+}
+
+.header-main .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+.header-main .container-image {
+	width: 120px;
+    height: auto;
+}
+
+.header-main .container-image .image {
+	width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header-main .navigation .wrapper-links {
+	display: flex;
+    list-style: none;
+}
+
+.header-main .navigation .wrapper-links .container-link + .container-link {
+	margin-left: 1.5em;
+}
+
+.header-main .navigation .wrapper-links .container-link .link {
+	font-size: 24px;
+	position: relative;
+	display: block;
+}
+
+.header-main .navigation .wrapper-links .container-link .link:hover:after {
+	width: 100%;
+}
+
+.header-main .navigation .wrapper-links .container-link .link:after {
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0;
+    height: 1px;
+    background-color: #000000;
+	transition: .35s width;
+}
+
+.main-page .section-01 {
+	background-color: #EFEFEF;
+	width: 100%;
+}
+
+.main-page .section-01 .block-album-spotify {
+	background-color: #CBB663;
+	width: 100%;
+	margin-top: -150px;
+	position: relative;
+	z-index: 1;
+	padding: 65px 0 50px;
+}
+
+.main-page .section-01 .block-album-spotify::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 13px;
+	background-color: #000000;
+	z-index: 99999999;
+}
+
+.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify {
+	width: 350px;
+    height: auto;
+}
+
+.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify .image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.main-page .section-01 .block-album-spotify .row {
+	align-items: center;
+	justify-content: center;
+}
+
+.main-page .section-01 .block-album-spotify .row .col + .col {
+	margin-left: 4em;
+}
+
+.main-page .section-01 .block-album-spotify .col-02 {
+	width: 100%;
+	max-width: 26em;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .header {
+	margin-bottom: 12px;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .header .container-image {
+	width: 180px;
+	height: auto;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .header .container-image .image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .main .text {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .footer {
+	margin-top: 25px;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .footer .btn {
+	background-color: #000000;
+	border: 0;
+	outline: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 15px;
+	cursor: pointer;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .footer .btn:hover .icon-arrow-right {
+	transform: translateX(8px);
+}
+
+.main-page .section-01 .block-album-spotify .box-content .footer .btn .text {
+	color: #FFFFFF;
+	font-size: 20px;
+	margin-right: 15px;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .footer .btn .icon-arrow-right {
+	display: block;
+	width: 32px;
+	height: 20px;
+	background-image: url(/icon-arrow-white.0911adfd.svg);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: .35s transform;
 }
 
 /*# sourceMappingURL=/base.98fd6c19.css.map */
