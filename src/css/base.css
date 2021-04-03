@@ -1236,12 +1236,16 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+	.header-main .container-image {
+		margin-right: 1.35em;
+	}
+
 	.header-main .navigation .wrapper-links .container-link + .container-link {
-		margin-left: .65em;
+		margin-left: .35em;
 	}
 
 	.header-main .navigation .wrapper-links .container-link .link {
-		font-size: 14px;
+		font-size: 12px;
 		margin-top: -10px;
 	}
 }
@@ -1305,6 +1309,12 @@ body {
 	margin-bottom: -135px;
 }
 
+@media screen and (max-width: 500px) {
+	.main-page .section-01 .block-album-spotify {
+		padding: 65px 30px 50px;
+	}
+}
+
 .main-page .section-01 .block-album-spotify::before {
 	content: '';
 	position: absolute;
@@ -1325,7 +1335,12 @@ body {
 .main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify * {
 	width: 100%;
 	height: 100%;
-	object-fit: contain;
+}
+
+@media screen and (max-width: 500px) {
+	.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify * {
+		padding: 0 50px;
+	}
 }
 
 .main-page .section-01 .block-album-spotify .row {
@@ -1387,6 +1402,12 @@ body {
 .main-page .section-01 .block-album-spotify .box-content .main .text {
 	font-size: 24px;
 	color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+	.main-page .section-01 .block-album-spotify .box-content .main .text {
+		font-size: 20px;
+	}
 }
 
 .main-page .section-01 .block-album-spotify .box-content .footer {
