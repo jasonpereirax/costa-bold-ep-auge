@@ -1405,8 +1405,20 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify {
+		width: 100%;
+	}
+
+	.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify * {
+		padding: 0;
+	}
+
+	.main-page .section-01 .block-album-spotify .row .col {
+		width: 100%;
+	}
+
 	.main-page .section-01 .block-album-spotify {
-		padding: 65px 30px 50px;
+		padding: 30px;
 	}
 }
 
@@ -1427,7 +1439,8 @@ body {
 }
 
 .main-page .section-01 .block-album-spotify .box-content-mobile .header {
-	margin-bottom: 25px;
+	margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .main-page .section-01 .block-album-spotify .box-content-mobile .header .wrapper-title .title {
@@ -1457,8 +1470,13 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify {
+		width: 100%;
+	}
+
 	.main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify * {
-		padding: 0 50px;
+		width: 100%;
+		padding: 0;
 	}
 }
 
@@ -2153,6 +2171,21 @@ body {
 	transition: .35s transform;
 }
 
+@media screen and (max-width: 500px) {
+	.main-page .section-03 .wrapper-newsletter .main .form {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-03 .wrapper-newsletter .main .form .input {
+		margin: 0;
+	}
+
+	.main-page .section-03 .wrapper-newsletter .main .form .btn {
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
 .footer-page {
 	position: relative;
 	background-color: #343434;
@@ -2168,6 +2201,16 @@ body {
 .footer-page .header .row {
 	align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+	.footer-page .header .row {
+		flex-wrap: wrap;
+	}
+
+	.footer-page .header .row .col-02 {
+		margin-top: 10px;
+	}
 }
 
 .footer-page .header .title {
@@ -2212,6 +2255,23 @@ body {
 	border-radius: 3px;
 	position: relative;
 	transition: .35s opacity ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+	.footer-page .main .row {
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.footer-page .main .wrapper-icons {
+		margin-top: 12px;
+	}
+
+	.footer-page .main .wrapper-icons .icon {
+		width: 35px;
+		height: 35px;
+	}
 }
 
 .footer-page .main .wrapper-icons .icon:hover {
