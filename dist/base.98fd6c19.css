@@ -2264,6 +2264,11 @@ body {
 		flex-wrap: wrap;
 	}
 
+	.footer-page .main .row .col {
+		width: 100%;
+		text-align: center;
+	}
+
 	.footer-page .main .wrapper-icons {
 		margin-top: 12px;
 	}
