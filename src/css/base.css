@@ -1449,6 +1449,122 @@ body {
 	transition: .35s transform;
 }
 
+.main-page .section-01 .block-products {
+	padding: 80px 0 45px;
+}
+
+.main-page .section-01 .block-products .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-page .section-01 .block-products .row .col + .col {
+	margin-left: 3em;
+}
+
+.main-page .section-01 .block-products .header .title {
+    font-family: monument;
+    font-weight: bold;
+    font-size: 28px;
+	width: 100%;
+}
+
+.main-page .section-01 .block-products .header .text {
+	font-size: 18px;
+	width: 100%;
+	max-width: 750px;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel {
+	position: relative;
+    padding: 0 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 35px 0;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .item {
+	flex: 1;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .owl-prev,
+.main-page .section-01 .block-products .main .owl-carousel .owl-next {
+	background-color: #333;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .owl-prev {
+	left: 0;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .owl-next {
+	right: 0;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .owl-prev span,
+.main-page .section-01 .block-products .main .owl-carousel .owl-next span {
+	margin-top: -6px;
+    font-size: 22px;
+}
+
+.main-page .section-01 .block-products .main .owl-carousel .item {
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 200px;
+}
+
+.main-page .section-01 .block-products .footer .wrapper-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-page .section-01 .block-products .footer .wrapper-button .btn {
+	background-color: #E4B715;
+	border: 0;
+	outline: 0;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 18px 15px;
+	cursor: pointer;
+}
+
+.main-page .section-01 .block-products .footer .wrapper-button .btn:hover .icon-arrow-right {
+	transform: translateX(8px);
+}
+
+.main-page .section-01 .block-products .footer .wrapper-button .btn .text {
+	color: #000000;
+	font-size: 14px;
+	margin-right: 15px;
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+.main-page .section-01 .block-products .footer .wrapper-button .btn .icon-arrow-right {
+	display: block;
+	width: 32px;
+	height: 20px;
+	background-image: url(../image/icon-arrow-black.svg);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	transition: .35s transform;
+}
+
 .main-page .section-01 .block-about-costa-gold {
 	padding: 160px 0 300px;
 	position: relative;

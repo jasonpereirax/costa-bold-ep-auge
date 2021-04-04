@@ -11,8 +11,10 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://use.typekit.net/kxo3pgz.css">
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"></script>
 	<script>
 	document.documentElement.className = "js";
 	var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -817,6 +819,59 @@
 								</div>
 							</div>
 
+							<div class="block-products">
+								<header class="header">
+									<div class="row">
+										<div class="col col-01">
+											<h2 class="title">
+												Produtos <br />
+												Do Albúm
+											</h2>
+										</div>
+
+										<div class="col col-02">
+											<p class="text">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</p>
+										</div>
+									</div>
+								</header>
+
+								<main class="main">
+									<ul class="owl-carousel">
+										<li class="item">
+											1
+										</li>
+
+										<li class="item">
+											2
+										</li>
+										
+										<li class="item">
+											3
+										</li>
+										
+										<li class="item">
+											4
+										</li>
+										
+										<li class="item">
+											5
+										</li>
+									</ul>
+								</main>
+
+								<footer class="footer">
+									<div class="wrapper-button">
+										<a href="#" class="btn btn-prize">
+											<span class="text">Compre agora</span>
+
+											<span class="icon icon-arrow-right"></span>
+										</a>
+									</div>
+								</footer>
+							</div>
+
 							<div class="block-about-costa-gold">
 								<div class="row">
 									<div class="col col-01">
@@ -1028,6 +1083,29 @@
 			<span class="enter__text">ENTRAR</span>
 		</button>
 	</main>
+
+	<script>
+		$(".owl-carousel").owlCarousel({
+			loop: true,
+			margin: 10,
+			responsiveClass: true,
+			responsive:{
+				0:{
+					items: 1,
+					nav: true
+				},
+				600:{
+					items: 3,
+					nav:false
+				},
+				1000:{
+					items: 4,
+					nav: true,
+					loop: false
+				}
+			}
+		})
+	</script>
 	<script src="js/demo3/index.js"></script>
 	<script src="js/demo3/background-move.js"></script>
 	<!--<script src="js/demo3/background-move.js"></script>-->
