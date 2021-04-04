@@ -1714,6 +1714,11 @@ body {
 		max-width: 100%;
 		margin-top: 3.5em;
 	}
+
+	.main-page .section-01 .block-about-costa-gold .col-02 .container-image {
+		width: 72%;
+		margin: auto;
+	}
 }
 
 .main-page .section-01 .block-about-costa-gold .box-content .header {
@@ -1842,7 +1847,7 @@ body {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 220px;
+	height: 50%;
 	background-image: url(../image/element-box-shadow.png);
 	background-size: contain;
 	background-position: center center;
@@ -1991,6 +1996,33 @@ body {
 .main-page .section-02 .wrapper-prize-draw .main .wrapper-tag .text {
 	font-size: 18px;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+	.main-page .section-02 .wrapper-prize-draw .header .wrapper-button {
+		display: block;
+		width: 100%;
+	}
+
+	.main-page .section-02 .wrapper-prize-draw .header .wrapper-button .btn {
+		width: 100%;
+    	margin-top: 15px;
+	}
+
+	.main-page .section-02 .wrapper-prize-draw .header {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-02 .wrapper-prize-draw .main .row {
+		flex-wrap: wrap;
+	}
+
+	.main-page .section-02 .wrapper-prize-draw .main .row .col {
+		margin: 0;
+		width: 100%;
+		flex: 1;
+		margin: 10px;
+	}
 }
 
 .main-page .section-03 {
