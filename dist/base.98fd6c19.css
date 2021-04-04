@@ -1787,6 +1787,8 @@ body {
 .main-page .section-03 {
 	padding: 40px 0;
 	background-color: #E8E8E8;
+	position: relative;
+    z-index: 1;
 }
 
 .main-page .section-03 .wrapper-newsletter {
@@ -1870,6 +1872,7 @@ body {
 	position: relative;
 	background-color: #343434;
 	width: 100%;
+	z-index: 1;
 }
 
 .footer-page .header {
