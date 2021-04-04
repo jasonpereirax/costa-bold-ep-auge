@@ -344,6 +344,12 @@ a:focus-visible {
 	margin-bottom: -20px;
 }
 
+@media screen and (max-width: 500px) {
+	.content .wrapper-scrolling .title {
+		font-size: 26px;
+	}
+}
+
 .content .wrapper-scrolling .container-image {
 	width: 100%;
     max-width: 450px;
@@ -1608,6 +1614,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+	.main-page .section-01 .block-products {
+		padding: 60px 0 0;
+	}
+
 	.main-page .section-01 .block-products .header .title {
 		margin-bottom: 10px;
 	}
@@ -1993,6 +2003,17 @@ body {
 	display: block;
 }
 
+@media screen and (max-width: 500px) {
+	.main-page .section-02 .wrapper-prize-draw .header .wrapper-text .title {
+		font-size: 18px;
+		margin-bottom: -10px;
+	}
+
+	.main-page .section-02 .wrapper-prize-draw .header .wrapper-text .subtitle {
+		font-size: 16px;
+	}
+}
+
 .main-page .section-02 .wrapper-prize-draw .header .wrapper-button .btn {
 	background-color: #E4B715;
 	border: 0;
@@ -2258,6 +2279,15 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+	.footer-page {
+		text-align: center;
+	}
+
+	.footer-page .header .col {
+		display: block;
+		width: 100%;
+	}
+
 	.footer-page .main .row {
 		align-items: center;
 		justify-content: center;
