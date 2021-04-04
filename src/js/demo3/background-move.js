@@ -3,6 +3,18 @@ $(document).ready(function(){
 
     $('.view').scrollTop(1450);
 
+    setTimeout(function() {
+        $('.view').scroll(function () {
+            $(".wrapper-scrolling").fadeOut(500);
+        });
+
+        $(window).scroll(function () {
+            $(".wrapper-scrolling").fadeOut(500);
+        });
+    }, 100)
+
+
+
     if(userHasScrolled) {
         $('.content').on('mousemove', function(e){
             e.stopPropagation();

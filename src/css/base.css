@@ -318,6 +318,82 @@ a:focus-visible {
 	opacity: 0;
 }
 
+.content .wrapper-scrolling {
+	position: fixed;
+    top: -30px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 500px;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: none !important;
+}
+
+.content .wrapper-scrolling .title {
+	font-family: monument;
+	font-weight: bold;
+	font-size: 35px;
+	color: #46310D;
+	margin-bottom: -20px;
+}
+
+.content .wrapper-scrolling .container-image {
+	width: 450px;
+	height: auto;
+	opacity: .85;
+}
+
+.content .wrapper-scrolling .container-image .image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.content .wrapper-scrolling .scroll {
+	border: 1px solid #FFFFFF;
+    padding: 20px 35px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, .32);
+    margin-top: -10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	margin-top: -15px;
+}
+
+.content .wrapper-scrolling .scroll::before {
+	content: '';
+	background-image: url(../image/icon-scroll.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+    width: 42px;
+    height: 30px;
+    display: block;
+	animation: 1.15s animation-scrolling infinite alternate;
+}
+
+@keyframes animation-scrolling {
+	0% {
+		transform: translateY(-3px);
+	}
+	100% {
+		transform: translateY(5px);
+	}
+}
+
+.content .wrapper-scrolling .scroll .text {
+	font-size: 21px;
+	color: #FFFFFF;
+}
+
 .content p {
 	font-size: 2rem;
 	font-size: clamp(1.25rem,6vw,2.15rem);
@@ -1187,7 +1263,7 @@ body {
     height: 100px;
     background-color: #FFFFFF;
     z-index: 99999;
-    padding-top: 18px;
+    padding-top: 13px;
 }
 
 .header-main::before {
@@ -1284,7 +1360,23 @@ body {
     height: 600px;
     position: absolute;
     top: 270px;
-    right: -250px;
+	right: -520px;
+    display: block;
+	z-index: 0;
+	animation: 60s animation-circle-letters linear infinite alternate;
+}
+
+.main-page .section-01 .container::before {
+	content: '';
+    background-image: url(../image/image-circle-letters.svg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -50px;
+	left: -530px;
     display: block;
 	z-index: 0;
 	animation: 60s animation-circle-letters linear infinite alternate;
@@ -1566,7 +1658,7 @@ body {
 }
 
 .main-page .section-01 .block-about-costa-gold {
-	padding: 160px 0 300px;
+	padding: 30px 0 190px;
 	position: relative;
     z-index: 1;
 }
@@ -1680,6 +1772,7 @@ body {
 
 .main-page .section-02 {
 	background-color: #FFFFFF;
+	position: relative;
 }
 
 .main-page .section-02 .container {
@@ -1695,7 +1788,7 @@ body {
     width: 600px;
     height: 600px;
     position: absolute;
-    top: 180px;
+    top: -280px;
     left: -250px;
     display: block;
 	z-index: 0;
@@ -1803,7 +1896,7 @@ body {
 	z-index: 1;
 	max-width: 800px;
     margin: auto;
-	padding: 50px 0;
+	padding: 65px 0;
 }
 
 .main-page .section-02 .wrapper-prize-draw .header {
