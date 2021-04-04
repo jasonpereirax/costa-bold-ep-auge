@@ -325,7 +325,8 @@ a:focus-visible {
     bottom: 0;
     left: 0;
     margin: auto;
-    width: 500px;
+	width: 85%;
+    max-width: 500px;
     z-index: 10;
     text-align: center;
     display: flex;
@@ -344,7 +345,8 @@ a:focus-visible {
 }
 
 .content .wrapper-scrolling .container-image {
-	width: 450px;
+	width: 100%;
+    max-width: 450px;
 	height: auto;
 	opacity: .85;
 }
@@ -1420,6 +1422,30 @@ body {
 	z-index: 99999999;
 }
 
+.main-page .section-01 .block-album-spotify .box-content-mobile {
+	display: none;
+}
+
+.main-page .section-01 .block-album-spotify .box-content-mobile .header {
+	margin-bottom: 25px;
+}
+
+.main-page .section-01 .block-album-spotify .box-content-mobile .header .wrapper-title .title {
+	font-family: monument;
+	font-weight: bold;
+	font-size: 28px;
+	color: #CBB663;
+	text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.main-page .section-01 .block-album-spotify .box-content-mobile .header .wrapper-title .subtitle {
+	margin-bottom: 10px;
+	font-family: monument;
+	font-weight: bold;
+	font-size: 26px;
+	color: #000000;
+}
+
 .main-page .section-01 .block-album-spotify .col-01 .wrapper-album-spotify {
 	width: 350px;
 	height: 500px;
@@ -1442,13 +1468,21 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+	.main-page .section-01 .block-album-spotify .box-content-mobile {
+		display: block;
+	}
+
 	.main-page .section-01 .block-album-spotify .row {
 		flex-wrap: wrap;
 	}
 
+	.main-page .section-01 .block-album-spotify .box-content .header .wrapper-title {
+		display: none;
+	}
+
 	.main-page .section-01 .block-album-spotify .row .col + .col {
 		margin-left: 0em;
-		margin-top: 3.5em;
+		margin-top: 1.65em;
 	}
 }
 
@@ -1553,6 +1587,21 @@ body {
 
 .main-page .section-01 .block-products .row .col + .col {
 	margin-left: 3em;
+}
+
+@media screen and (max-width: 600px) {
+	.main-page .section-01 .block-products .header .title {
+		margin-bottom: 10px;
+	}
+
+	.main-page .section-01 .block-products .row {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+
+	.main-page .section-01 .block-products .row .col + .col {
+		margin: 0;
+	}
 }
 
 .main-page .section-01 .block-products .header .title {
@@ -1713,11 +1762,6 @@ body {
 	.main-page .section-01 .block-about-costa-gold .col-02 {
 		max-width: 100%;
 		margin-top: 3.5em;
-	}
-
-	.main-page .section-01 .block-about-costa-gold .col-02 .container-image {
-		width: 72%;
-		margin: auto;
 	}
 }
 
