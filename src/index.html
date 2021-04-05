@@ -91,6 +91,56 @@
 										</li>
 									</ul>
 								</nav>
+
+								<nav class="navigation-mobile">
+									<div class="menu-hamburguer"></div>
+
+									<div class="menu-mobile hide">
+										<header class="header">
+											<div class="container-image">
+												<img src="image/logo-auge.svg" alt="Logo Auge" class="image image-logo" />
+											</div>
+
+											<div class="icon-close"></div>
+										</header>
+
+										<main>
+											<nav class="navigation">
+												<ul class="wrapper-links">
+													<li class="container-link">
+														<a href="#" class="link">
+															Lorem Ipsum
+														</a>
+													</li>
+													
+													<li class="container-link">
+														<a href="#" class="link">
+															Lorem Ipsum
+														</a>
+													</li>
+													
+													<li class="container-link">
+														<a href="#" class="link">
+															Lorem Ipsum
+														</a>
+													</li>
+													
+													<li class="container-link">
+														<a href="#" class="link">
+															Lorem Ipsum
+														</a>
+													</li>
+													
+													<li class="container-link">
+														<a href="#" class="link">
+															Lorem Ipsum
+														</a>
+													</li>
+												</ul>
+											</nav>
+										</main>
+									</div>
+								</nav>
 							</div>
 						</header>
 
@@ -1129,7 +1179,15 @@
 						loop: false
 					}
 				}
-			})
+			});
+
+			$(".menu-hamburguer").click(function() {
+				$(".menu-mobile").removeClass('hide');
+			});
+			
+			$(".menu-mobile .icon-close").click(function() {
+				$(".menu-mobile").addClass('hide');
+			});
 		</script>
 		<script src="js/demo3/index.js"></script>
 		<script src="js/demo3/background-move.js"></script>
