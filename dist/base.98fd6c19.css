@@ -1632,13 +1632,13 @@ body {
 .main-page .section-01 .block-album-spotify .box-content .header .wrapper-title .title {
 	font-family: monument;
 	font-weight: bold;
-	font-size: 28px;
+	font-size: 32px;
 	color: #CBB663;
 	text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
 
 .main-page .section-01 .block-album-spotify .box-content .header .wrapper-title .subtitle {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	font-family: monument;
 	font-weight: bold;
 	font-size: 26px;
@@ -1646,21 +1646,25 @@ body {
 }
 
 .main-page .section-01 .block-album-spotify .box-content .main .text {
-	font-size: 24px;
+	font-size: 21px;
 	color: #FFFFFF;
+}
+
+.main-page .section-01 .block-album-spotify .box-content .main .text + .text {
+	margin-top: 1em;
 }
 
 @media screen and (max-width: 500px) {
 	.main-page .section-01 .block-album-spotify .box-content .main .text {
-		font-size: 20px;
+		font-size: 16px;
 	}
 }
 
-.main-page .section-01 .block-album-spotify .box-content .footer {
+.main-page .section-01 .block-album-spotify .footer {
 	margin-top: 25px;
 }
 
-.main-page .section-01 .block-album-spotify .box-content .footer .btn {
+.main-page .section-01 .block-album-spotify .footer .btn {
 	background-color: #000000;
 	border: 0;
 	outline: 0;
@@ -1669,13 +1673,14 @@ body {
 	justify-content: center;
 	padding: 18px 15px;
 	cursor: pointer;
+	width: 100%;
 }
 
-.main-page .section-01 .block-album-spotify .box-content .footer .btn:hover .icon-arrow-right {
+.main-page .section-01 .block-album-spotify .footer .btn:hover .icon-arrow-right {
 	transform: translateX(8px);
 }
 
-.main-page .section-01 .block-album-spotify .box-content .footer .btn .text {
+.main-page .section-01 .block-album-spotify .footer .btn .text {
 	color: #FFFFFF;
 	font-size: 20px;
 	margin-right: 15px;
@@ -1683,7 +1688,7 @@ body {
 	font-weight: 300;
 }
 
-.main-page .section-01 .block-album-spotify .box-content .footer .btn .icon-arrow-right {
+.main-page .section-01 .block-album-spotify .footer .btn .icon-arrow-right {
 	display: block;
 	width: 32px;
 	height: 20px;
@@ -1692,6 +1697,52 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	transition: .35s transform;
+}
+
+.main-page .section-01 .block-house {
+	margin: 75px 0;
+}
+
+.main-page .section-01 .block-house .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main-page .section-01 .block-house .col {
+	flex: 1;
+}
+
+.main-page .section-01 .block-house .col + .col {
+	margin-left: 4em;
+}
+
+.main-page .section-01 .block-house .container-image {
+	width: 100%;
+    height: 100%;
+}
+
+.main-page .section-01 .block-house .container-image .image {
+	width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.main-page .section-01 .block-house .box-text .header .title {
+	font-family: monument;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.main-page .section-01 .block-house .box-text .main .text {
+	font-weight: 300;
+    font-size: 16px;
+    color: #5D5D5D;
+}
+
+.main-page .section-01 .block-house .box-text .main .text + .text {
+	margin-top: 1em;
 }
 
 .main-page .section-01 .block-products {
@@ -1900,8 +1951,12 @@ body {
 }
 
 .main-page .section-01 .block-about-costa-gold .box-content .main .text {
-	font-size: 24px;
+	font-size: 16px;
 	color: #373633;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content .main .text + .text {
+	margin-top: 1em;
 }
 
 .main-page .section-01 .block-about-costa-gold .box-content .footer {
@@ -2014,7 +2069,7 @@ body {
 	left: 0;
 	right: 0;
 	width: 100%;
-	height: 50%;
+	height: 150px;
 	background-image: url(/element-box-shadow.faf9af1c.png);
 	background-size: contain;
 	background-position: center center;
@@ -2441,6 +2496,54 @@ body {
 
 .footer-page .main .wrapper-icons .icon + .icon {
 	margin-left: .65em;
+}
+
+.wrapper-read-more .hidding {
+	display: none;
+	margin-top: 1em;
+}
+
+.wrapper-read-more .showing {
+	display: block;
+}
+
+.wrapper-read-more .button-read-more {
+	margin: 1em 0;
+	cursor: pointer;
+}
+
+.wrapper-read-more .button-read-more.button-template-01 {
+	background: transparent;
+    border: 0;
+    color: #D5A552;
+    font-weight: 300;
+    font-size: 18px;
+    outline: 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	transition: .35s opacity ease-in-out;
+}
+
+.wrapper-read-more .button-read-more.button-template-01:hover {
+	opacity: .75;
+}
+
+.wrapper-read-more .button-read-more.button-template-01:hover:after {
+	transform: translateY(5px);
+}
+
+.wrapper-read-more .button-read-more.button-template-01:after {
+	content: '';
+	width: 1em;
+	height: 1em;
+	background-image: url('/icon-arrow-down.9b5c10bb.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    margin-left: .4em;
+	transition: .35s transform ease-in-out;
 }
 
 /*# sourceMappingURL=/base.98fd6c19.css.map */
