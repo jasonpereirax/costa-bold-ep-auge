@@ -7,11 +7,10 @@ $(document).ready(function() {
         $('.footer-privacy-policy').hide();
     }
 
-    $(".btn-close, .btn-subscribe").click(function(e) {
+    $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function(e) {
         localStorage.setItem('modal-newsletter', true);
 
         e.preventDefault();
-
 
         $(this).parents('.modal-newsletter').hide();
     });
@@ -21,6 +20,16 @@ $(document).ready(function() {
 
         $(this).parents('.footer-privacy-policy').hide();
     });
+
+    $(".btn-privacy-policy").click(function(e) {
+        e.preventDefault();
+
+        $(".modal-privacy-policy").removeClass('hide');
+    });
+
+    $(".modal-privacy-policy .btn-close").click(function() {
+        $(this).parents('.modal-privacy-policy').hide();
+    })
 
     $(".carousel-01").owlCarousel({
         loop: true,

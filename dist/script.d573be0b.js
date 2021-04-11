@@ -127,7 +127,7 @@ $(document).ready(function () {
     $('.footer-privacy-policy').hide();
   }
 
-  $(".btn-close, .btn-subscribe").click(function (e) {
+  $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function (e) {
     localStorage.setItem('modal-newsletter', true);
     e.preventDefault();
     $(this).parents('.modal-newsletter').hide();
@@ -135,6 +135,13 @@ $(document).ready(function () {
   $(".btn-accepted").click(function (e) {
     localStorage.setItem('footer-privacy-policy', true);
     $(this).parents('.footer-privacy-policy').hide();
+  });
+  $(".btn-privacy-policy").click(function (e) {
+    e.preventDefault();
+    $(".modal-privacy-policy").removeClass('hide');
+  });
+  $(".modal-privacy-policy .btn-close").click(function () {
+    $(this).parents('.modal-privacy-policy').hide();
   });
   $(".carousel-01").owlCarousel({
     loop: true,
@@ -220,7 +227,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60094" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60786" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

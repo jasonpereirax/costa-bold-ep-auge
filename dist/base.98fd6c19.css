@@ -640,6 +640,7 @@ body {
 	top: 15px;
 	right: 15px;
 	transition: .35s opacity ease-in-out;
+	outline: 0;
 }
 
 .modal-newsletter .content-modal .btn-close:hover {
@@ -650,6 +651,144 @@ body {
 	color: #FFFFFF;
 }
 
+.modal-privacy-policy {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .45);
+	z-index: 999999;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-privacy-policy .content-modal {
+	width: 100%;
+	height: 560px;
+    background-color: #FFF;
+    max-width: 600px;
+    padding: 55px 25px 60px;
+    position: relative;
+}
+
+.modal-privacy-policy .content-modal .header-modal {
+	margin-bottom: 23px;
+}
+
+.modal-privacy-policy .content-modal .header-modal .title {
+	font-family: monument;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: -5px;
+	color: #1C1C1C;
+}
+
+.modal-privacy-policy .content-modal .header-modal .subtitle {
+    font-weight: 300;
+    font-size: 16px;
+	color: #656565;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .wrapper-input {
+	width: 100%;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .wrapper-input + .wrapper-input {
+	margin-top: 10px;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .wrapper-input .input-text {
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	width: 100%;
+    height: 45px;
+    padding: 10px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .btn-subscribe {
+	background-color: #E4B715;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .btn-subscribe:hover .icon {
+	transform: translateX(8px);
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .btn-subscribe .icon {
+	transition: .35s transform ease-in-out;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .btn-subscribe .text {
+	color: #000000;
+    font-size: 14px;
+    margin-right: 15px;
+    font-family: opensans, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.modal-privacy-policy .content-modal .main-modal .form .btn-subscribe .icon-arrow-right {
+	display: block;
+    width: 32px;
+    height: 20px;
+    background-image: url(/icon-arrow-black.8269fe8d.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: .35s transform;
+}
+
+.modal-privacy-policy .content-modal .btn-close {
+	border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal-privacy-policy .content-modal .btn-close {
+	width: 28px;
+    height: 28px;
+    background-image: url(/icon-close-gray.04c52c13.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: .35s opacity ease-in-out;
+}
+
+.modal-privacy-policy .content-modal .main-modal {
+	height: 100%;
+    overflow-y: scroll;
+}
+
+.modal-privacy-policy .content-modal .main-modal .text {
+	font-size: 18px;
+}
+
+.modal-privacy-policy .content-modal .main-modal .text + .text {
+	margin-top: 1em;
+}
+
+.modal-privacy-policy .content-modal .btn-close:hover {
+	opacity: .7;
+}
+
+.modal-privacy-policy .content .text {
+	color: #FFFFFF;
+}
+
 .footer-privacy-policy {
 	width: 100vw;
     height: 70px;
@@ -657,7 +796,7 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 9999999;
+    z-index: 99999;
 }
 
 .footer-privacy-policy .container {
