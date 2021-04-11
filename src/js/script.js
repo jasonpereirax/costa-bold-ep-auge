@@ -51,10 +51,8 @@ $(document).ready(function() {
         $('.footer-privacy-policy').hide();
     }
 
-    $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function(e) {
+    $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function() {
         localStorage.setItem('modal-newsletter', true);
-
-        e.preventDefault();
 
         $(this).parents('.modal-newsletter').hide();
     });
