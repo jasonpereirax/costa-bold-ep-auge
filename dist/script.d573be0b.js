@@ -119,7 +119,27 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".carousel-01").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true
+      },
+      600: {
+        items: 1,
+        nav: true
+      },
+      1000: {
+        items: 1,
+        nav: true,
+        loop: true
+      }
+    }
+  });
+  $(".carousel-02").owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -183,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52369" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54383" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
