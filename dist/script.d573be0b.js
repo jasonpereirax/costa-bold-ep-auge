@@ -118,7 +118,52 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 $(document).ready(function () {
+  var form = document.getElementById("my-form");
+
+  function handleSubmit(_x) {
+    return _handleSubmit.apply(this, arguments);
+  }
+
+  function _handleSubmit() {
+    _handleSubmit = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(event) {
+      var status, data;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              event.preventDefault();
+              status = document.getElementById("my-form-status");
+              data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              }).then(function (response) {
+                status.innerHTML = "Thanks for your submission!";
+                form.reset();
+              }).catch(function (error) {
+                status.innerHTML = "Oops! There was a problem submitting your form";
+              });
+
+            case 4:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+    return _handleSubmit.apply(this, arguments);
+  }
+
+  form.addEventListener("submit", handleSubmit);
+
   if (localStorage.getItem('modal-newsletter')) {
     $('.modal-newsletter').hide();
   }
@@ -227,7 +272,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54479" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55053" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
