@@ -21,7 +21,7 @@ $(document).ready(function() {
     
     form.addEventListener("submit", handleSubmit);
     
-    var form02 = document.getElementById("my-form");
+    var form02 = document.getElementById("my-form-02");
     
     async function handleSubmit(event) {
       event.preventDefault();
