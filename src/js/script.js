@@ -2,6 +2,10 @@ $(document).ready(function() {
     if( localStorage.getItem('modal-newsletter') ) {
         $('.modal-newsletter').hide();
     }
+    
+    if( localStorage.getItem('footer-privacy-policy') ) {
+        $('.footer-privacy-policy').hide();
+    }
 
     $(".btn-close, .btn-subscribe").click(function(e) {
         localStorage.setItem('modal-newsletter', true);
@@ -10,6 +14,12 @@ $(document).ready(function() {
 
 
         $(this).parents('.modal-newsletter').hide();
+    });
+
+    $(".btn-accepted").click(function(e) {
+        localStorage.setItem('footer-privacy-policy', true);
+
+        $(this).parents('.footer-privacy-policy').hide();
     });
 
     $(".carousel-01").owlCarousel({

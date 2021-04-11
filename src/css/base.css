@@ -650,6 +650,52 @@ body {
 	color: #FFFFFF;
 }
 
+.footer-privacy-policy {
+	width: 100vw;
+    height: 70px;
+    background-color: #1D1D1D;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+}
+
+.footer-privacy-policy .container {
+	height: 100%;
+}
+
+.footer-privacy-policy .row {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+	margin-left: -10px;
+}
+
+.footer-privacy-policy .text {
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+.footer-privacy-policy .group-button button + button {
+	margin-left: 5px;
+}
+
+.footer-privacy-policy .group-button .button-yellow {
+	border: 0;
+	font-family: opensans, Arial, Helvetica, sans-serif;
+    background-color: #E4B715;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+	cursor: pointer;
+	outline: 0;
+}
+
+.footer-privacy-policy .group-button .button-yellow:hover {
+	opacity: .75;
+}
+
 .view {
 	width: 100%;
     height: 100vh;

@@ -123,10 +123,18 @@ $(document).ready(function () {
     $('.modal-newsletter').hide();
   }
 
+  if (localStorage.getItem('footer-privacy-policy')) {
+    $('.footer-privacy-policy').hide();
+  }
+
   $(".btn-close, .btn-subscribe").click(function (e) {
     localStorage.setItem('modal-newsletter', true);
     e.preventDefault();
     $(this).parents('.modal-newsletter').hide();
+  });
+  $(".btn-accepted").click(function (e) {
+    localStorage.setItem('footer-privacy-policy', true);
+    $(this).parents('.footer-privacy-policy').hide();
   });
   $(".carousel-01").owlCarousel({
     loop: true,
@@ -212,7 +220,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54501" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60094" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
