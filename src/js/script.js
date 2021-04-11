@@ -12,14 +12,36 @@ $(document).ready(function() {
             'Accept': 'application/json'
         }
       }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = "Obrigado! Agora é só aguardar no seu e-mail para acompanhar novidades.";
         form.reset()
       }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
+        status.innerHTML = "Oops! Houve algum problema no envio do e-mail."
       });
     }
     
-    form.addEventListener("submit", handleSubmit)
+    form.addEventListener("submit", handleSubmit);
+    
+    var form02 = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form02.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Obrigado! Agora é só aguardar no seu e-mail para acompanhar novidades.";
+        form02.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! Houve algum problema no envio do e-mail."
+      });
+    }
+
+    form02.addEventListener("submit", handleSubmit)
 
     if( localStorage.getItem('modal-newsletter') ) {
         $('.modal-newsletter').hide();
