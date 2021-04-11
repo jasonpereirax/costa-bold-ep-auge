@@ -146,10 +146,10 @@ $(document).ready(function () {
                   'Accept': 'application/json'
                 }
               }).then(function (response) {
-                status.innerHTML = "Thanks for your submission!";
+                status.innerHTML = "Obrigado! Agora é só aguardar no seu e-mail para acompanhar novidades.";
                 form.reset();
               }).catch(function (error) {
-                status.innerHTML = "Oops! There was a problem submitting your form";
+                status.innerHTML = "Oops! Houve algum problema no envio do e-mail.";
               });
 
             case 4:
@@ -163,6 +163,46 @@ $(document).ready(function () {
   }
 
   form.addEventListener("submit", handleSubmit);
+  var form02 = document.getElementById("my-form");
+
+  function handleSubmit(_x2) {
+    return _handleSubmit2.apply(this, arguments);
+  }
+
+  function _handleSubmit2() {
+    _handleSubmit2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(event) {
+      var status, data;
+      return regeneratorRuntime.wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              event.preventDefault();
+              status = document.getElementById("my-form-status");
+              data = new FormData(event.target);
+              fetch(event.target.action, {
+                method: form02.method,
+                body: data,
+                headers: {
+                  'Accept': 'application/json'
+                }
+              }).then(function (response) {
+                status.innerHTML = "Obrigado! Agora é só aguardar no seu e-mail para acompanhar novidades.";
+                form02.reset();
+              }).catch(function (error) {
+                status.innerHTML = "Oops! Houve algum problema no envio do e-mail.";
+              });
+
+            case 4:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+    return _handleSubmit2.apply(this, arguments);
+  }
+
+  form02.addEventListener("submit", handleSubmit);
 
   if (localStorage.getItem('modal-newsletter')) {
     $('.modal-newsletter').hide();
@@ -272,7 +312,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55053" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55436" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
