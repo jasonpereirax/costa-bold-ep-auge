@@ -109,7 +109,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 								</header>
 
 								<main class="main-modal">
-									<form class="form">
+									<form class="form" id="my-form" action="https://formspree.io/f/mpzkznrr" method="POST">
 										<div class="wrapper-input">
 											<input class="input-text" type="text" name="name">
 										</div>
@@ -118,7 +118,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 											<input class="input-text" type="email" name="email">
 										</div>
 
-										<button type="submit" class="btn-subscribe">
+										<button type="submit" class="btn-subscribe" id="my-form-button">
 											<span class="text">Assinar</span>
 											
 											<span class="icon icon-arrow-right"></span>
@@ -1323,15 +1323,15 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 									</header>
 
 									<main class="main">
-										<form class="form">
-											<input class="input" type="text" placeholder="E-mail">
+										<form class="form" id="my-form" action="https://formspree.io/f/mpzkznrr" method="POST"></form>
+											<input class="input" type="email" name="email" placeholder="E-mail">
 
-											<button type="submit" class="btn btn-spotify">
+											<button type="submit" class="btn btn-spotify" id="my-form-button">
 												<span class="text">Assinar</span>
 
 												<span class="icon icon-arrow-right"></span>
 											</button>
-										</form>
+										
 									</main>
 								</div>
 							</div>
