@@ -114,6 +114,7 @@ export class Intro {
         $(".frame").hide();
         $(".content").addClass('grabbable');
         $(".wrapper-content-page").removeClass('hide');
+        $(".modal-newsletter").removeClass('hide');
 
         gsap.timeline()
         .addLabel('start', 0)

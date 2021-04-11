@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    if( localStorage.getItem('modal-newsletter') ) {
+        $('.modal-newsletter').hide();
+    }
+
+    $(".btn-close, .btn-subscribe").click(function(e) {
+        localStorage.setItem('modal-newsletter', true);
+
+        e.preventDefault();
+
+
+        $(this).parents('.modal-newsletter').hide();
+    });
+
     $(".carousel-01").owlCarousel({
         loop: true,
         margin: 10,

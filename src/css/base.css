@@ -521,6 +521,135 @@ body {
 	overflow: hidden;
 }
 
+.modal-newsletter.hide {
+	display: none;
+}
+
+.modal-newsletter {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, .45);
+	z-index: 999999;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-newsletter .content-modal {
+	width: 100%;
+    height: 270px;
+    background-color: #FFF;
+    max-width: 600px;
+    padding: 55px 25px 60px;
+    position: relative;
+}
+
+.modal-newsletter .content-modal .header-modal {
+	margin-bottom: 23px;
+}
+
+.modal-newsletter .content-modal .header-modal .title {
+	font-family: monument;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: -5px;
+	color: #1C1C1C;
+}
+
+.modal-newsletter .content-modal .header-modal .subtitle {
+    font-weight: 300;
+    font-size: 16px;
+	color: #656565;
+}
+
+.modal-newsletter .content-modal .main-modal .form .wrapper-input {
+	width: 100%;
+}
+
+.modal-newsletter .content-modal .main-modal .form .wrapper-input + .wrapper-input {
+	margin-top: 10px;
+}
+
+.modal-newsletter .content-modal .main-modal .form .wrapper-input .input-text {
+	font-family: opensans, Arial, Helvetica, sans-serif;
+	width: 100%;
+    height: 45px;
+    padding: 10px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+.modal-newsletter .content-modal .main-modal .form .btn-subscribe {
+	background-color: #E4B715;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 25px;
+}
+
+.modal-newsletter .content-modal .main-modal .form .btn-subscribe:hover .icon {
+	transform: translateX(8px);
+}
+
+.modal-newsletter .content-modal .main-modal .form .btn-subscribe .icon {
+	transition: .35s transform ease-in-out;
+}
+
+.modal-newsletter .content-modal .main-modal .form .btn-subscribe .text {
+	color: #000000;
+    font-size: 14px;
+    margin-right: 15px;
+    font-family: opensans, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.modal-newsletter .content-modal .main-modal .form .btn-subscribe .icon-arrow-right {
+	display: block;
+    width: 32px;
+    height: 20px;
+    background-image: url(../image/icon-arrow-black.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: .35s transform;
+}
+
+.modal-newsletter .content-modal .btn-close {
+	border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal-newsletter .content-modal .btn-close {
+	width: 28px;
+	height: 28px;
+	background-image: url('../image/icon-close-gray.svg');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	transition: .35s opacity ease-in-out;
+}
+
+.modal-newsletter .content-modal .btn-close:hover {
+	opacity: .7;
+}
+
+.modal-newsletter .content .text {
+	color: #FFFFFF;
+}
+
 .view {
 	width: 100%;
     height: 100vh;
@@ -1272,7 +1401,7 @@ body {
     background-color: #FFFFFF;
     z-index: 99999;
     padding-top: 13px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .35);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .35);
 }
 
 .header-main::before {

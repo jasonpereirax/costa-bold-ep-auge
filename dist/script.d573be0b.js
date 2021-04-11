@@ -119,6 +119,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
 $(document).ready(function () {
+  if (localStorage.getItem('modal-newsletter')) {
+    $('.modal-newsletter').hide();
+  }
+
+  $(".btn-close, .btn-subscribe").click(function (e) {
+    localStorage.setItem('modal-newsletter', true);
+    e.preventDefault();
+    $(this).parents('.modal-newsletter').hide();
+  });
   $(".carousel-01").owlCarousel({
     loop: true,
     margin: 10,
@@ -203,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61694" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54501" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
