@@ -1957,9 +1957,13 @@ body {
 }
 
 .main-page .section-01 .block-about-costa-gold {
-	padding: 30px 0 190px;
-	position: relative;
+	padding: 45px 0 250px;
+    position: relative;
     z-index: 1;
+}
+
+.main-page .section-01 .block-about-costa-gold .box-content {
+	margin-top: -60px;
 }
 
 @media screen and (max-width: 800px) {
@@ -2029,6 +2033,7 @@ body {
 .main-page .section-01 .block-about-costa-gold .box-content .main .text {
 	font-size: 16px;
 	color: #373633;
+	font-weight: 300;
 }
 
 .main-page .section-01 .block-about-costa-gold .box-content .main .text + .text {
@@ -2131,6 +2136,7 @@ body {
 
 .main-page .section-02 .wrapper-artists .card {
 	background-color: #CBB663;
+	height: 100%;
 }
 
 .main-page .section-02 .wrapper-artists .card .card-header {
@@ -2189,8 +2195,18 @@ body {
 	color: #000000;
 }
 
-.main-page .section-02 .wrapper-artists .card .card-main .wrapper-text .text {
-	font-size: 20px;
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-text {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-text .wrapper-read-more .showing {
+	margin-top: 0;
+	display: inline;
+}
+
+.main-page .section-02 .wrapper-artists .card .card-main .wrapper-text .wrapper-read-more .hidding {
+	margin-top: 0;
 }
 
 .main-page .section-02 .wrapper-prize-draw {
@@ -2614,6 +2630,43 @@ body {
 	width: 1em;
 	height: 1em;
 	background-image: url('/icon-arrow-down.9b5c10bb.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    margin-left: .4em;
+	transition: .35s transform ease-in-out;
+}
+
+.wrapper-read-more .button-read-more.button-template-02 {
+	background: transparent;
+    border: 0;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 18px;
+    outline: 0;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	border: 1px solid;
+	padding: 6px 15px;
+	border-radius: 35px;
+	transition: .35s opacity ease-in-out;
+}
+
+.wrapper-read-more .button-read-more.button-template-02:hover {
+	opacity: .75;
+}
+
+.wrapper-read-more .button-read-more.button-template-02:hover:after {
+	transform: translateY(3px);
+}
+
+.wrapper-read-more .button-read-more.button-template-02:after {
+	content: '';
+	width: 1em;
+	height: 1em;
+	background-image: url('/icon-arrow-down-white.a5620481.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
