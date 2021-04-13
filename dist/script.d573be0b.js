@@ -163,7 +163,7 @@ $(document).ready(function () {
   }
 
   form.addEventListener("submit", handleSubmit);
-  var form02 = document.getElementById("my-form");
+  var form02 = document.getElementById("my-form-02");
 
   function handleSubmit(_x2) {
     return _handleSubmit2.apply(this, arguments);
@@ -212,9 +212,8 @@ $(document).ready(function () {
     $('.footer-privacy-policy').hide();
   }
 
-  $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function (e) {
+  $(".modal-newsletter .btn-close, .modal-newsletter .btn-subscribe").click(function () {
     localStorage.setItem('modal-newsletter', true);
-    e.preventDefault();
     $(this).parents('.modal-newsletter').hide();
   });
   $(".btn-accepted").click(function (e) {
@@ -312,7 +311,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55436" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65338" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
